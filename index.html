@@ -1095,7 +1095,7 @@
 
             // ============ EVENTS ============
             resetBtn.addEventListener('click', () => {
-                if (confirm('Очистить редактор?')) {
+                if (confirm('Clear editor?')) {
                     codeEditor.value = '';
                     searchQuery = '';
                     searchInput.value = '';
@@ -1144,7 +1144,6 @@
                 syntaxHighlight.scrollLeft = this.scrollLeft;
             });
 
-            // Глобальные горячие клавиши
             document.addEventListener('keydown', (e) => {
                 if (e.ctrlKey && e.key === 's') {
                     e.preventDefault();
